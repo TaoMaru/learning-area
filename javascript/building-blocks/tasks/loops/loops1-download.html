@@ -31,6 +31,12 @@
 
     // Add your code here
 
+    for(const foodItem of myArray) {
+      let listItem = document.createElement("li");
+      listItem.textContent = foodItem;
+      list.appendChild(listItem);
+    }
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

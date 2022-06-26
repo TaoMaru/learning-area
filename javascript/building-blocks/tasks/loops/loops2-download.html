@@ -41,6 +41,13 @@
     ]
 
     // Add your code here
+    for(const person of phonebook) {
+      if(person.name == name) {
+        para.textContent = person.number;
+        break;
+      }
+    }
+
 
     // Don't edit the code below here!
     const section = document.querySelector('section');

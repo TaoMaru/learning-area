@@ -42,6 +42,16 @@
 
     // Add your code here
 
+    while(i-- > 2) {
+      if(!isPrime(i)) {
+        continue;
+      }
+      para.textContent += i + ", ";
+    }
+
+    let pContent = para.textContent;
+    para.textContent = pContent.slice(0, pContent.length - 2);
+
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
